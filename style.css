@@ -1,0 +1,326 @@
+@charset "utf-8" ;
+
+/* 共通部分
+------------------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  font-family: 'Sawarabi Mincho', sans-serif;
+  background-color: lightgray;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+}
+img{
+  width: 100%;
+}
+/* topbtn
+---------------------------------------- */
+#topbtn{
+  position: fixed;
+  top: 700px;
+  left: 93%;
+  text-align: center;
+}
+/* header
+--------------------------------------- */
+.header-text{
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
+  font-size: 16px;
+  margin-right: 50px;
+}
+.header-list{
+  display: flex;
+  margin-left: 10%;
+}
+.header-list a:hover{
+  text-decoration: underline wavy orange;
+}
+.header-list img{
+  width: 60px;
+  height: 80px;
+}
+ul {
+  margin-left:70px ;
+  padding: 0;
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+}
+li {
+  padding: 10px 0px 10px 0;
+  margin-left: 60px;
+  font-size: 18px;
+  writing-mode: vertical-rl;
+  letter-spacing: 3px;
+}
+.header-list p{
+  margin-left: 41%;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+/* swiper
+----------------------------------------- */
+.swiper-container{
+  width: 80%;
+  height: 600px;
+}
+.swiper-wrapper img{
+  object-fit: cover;
+}
+/* main-content
+------------------------------------ */
+.main-content-wrapper{
+  display: flex;
+  margin: 0 15%;
+}
+#main-content-text{
+  background-color:rgba(255, 255, 255, .9);
+  position: relative;
+  height: 50%;
+  width: 80%;
+  top: 50px;
+  left: 60px;
+  padding: 80px 140px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.7;
+}
+.main-content-img{
+  width: 200%;
+  margin-top: 100px;
+  margin-right: 5%;
+}
+/* cuisine
+-------------------------------------- */
+.cuisine-content{
+  margin-top: 15px;
+}
+#cuisine-title ul{
+  justify-content: center;
+  margin: auto;
+}
+.sub-title{
+  margin: auto;
+  margin-bottom: 80px;
+  letter-spacing: 0.5rem;
+  font-size: 30px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+.cuisine-wrapper{
+  display: flex;
+  margin: 0 15%;
+  margin-bottom: 10px;
+}
+.cuisine-img{
+  width: 110%;
+  margin-top:50px ;
+  margin-left: 5%;
+}
+.cuisine-text{
+  background-color:rgba(255, 255, 255, .9);
+  position: relative;
+  height: 40%;
+  width: 60%;
+  top: 0px;
+  right: 40px;
+  padding: 35px 120px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.7;
+}
+.cuisine-pic{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.cuisine-pic img{
+  width: 17%;
+  height: 200px;
+}
+.pic1{
+  margin-top: 20px;
+}
+.pic2{
+  margin-top: 40px;
+}
+.pic3{
+  margin-top: 20px;
+}
+.pic4{
+  margin-top: 40px;
+}
+.pic5{
+  margin-top: 20px;
+}
+/* pran
+------------------------------------ */
+.pran-content{
+  margin-top: 80px;
+}
+#pran-title ul{
+  margin: auto;
+}
+#pran-title li{
+  font-family:'游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-weight: 300;
+  margin: auto;
+  margin-bottom: 50px;
+  letter-spacing: 0.1rem;
+}
+
+.pran-wrapper{
+  display: flex;
+  margin: 0 15%;
+}
+.pran-img{
+  width: 120%;
+  margin-top:50px ;
+  margin-right: 5%;
+}
+.pran-text{
+  background-color:rgba(255, 255, 255, .9);
+  position: relative;
+  height: 40%;
+  width: 60%;
+  top: 20px;
+  left: 40px;
+  padding: 100px 100px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.7;
+}
+/* shop
+---------------------------------- */
+.shop-content{
+  margin-top: 50px;
+}
+#shop-title ul{
+  margin: auto;
+}
+#shop-title li{
+  margin: auto;
+  margin-bottom: 50px;
+}
+.shop-wrapper{
+  display: flex;
+}
+.shop-img{
+  width: 110%;
+  margin-top:50px ;
+  margin-left: 5%;
+  position: relative;
+  z-index: 10;
+}
+.shop-text{
+  position: relative;
+  height: 50%;
+  width: 100%;
+  top: 100px;
+  right: 40px;
+  padding: 35px 120px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.7;
+}
+footer{
+  background-color:#253758;
+  margin-top: 100px;
+}
+.copy-right{
+  padding: 80px;
+  text-align: center;
+  color: white;
+}
+/* モバイル版
+------------------------------------- */
+@media screen and (max-width:600px){
+  #topbtn{
+    top: 20%;
+    left: 60%;
+    display: none;
+  }
+  .header-text{
+    font-size: 5px;
+    margin: auto;
+  }
+  .header-list{
+    margin: auto;
+  }
+  .header-list ul{
+    margin-left: 10px;
+  }
+  .header-list li{
+    margin-left: 15px;
+  }
+  .header-list p{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .swiper-container{
+    height: auto;
+  }
+  .main-content-wrapper{
+    flex-direction: column-reverse;
+  }
+  #main-content-text{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 20px 60px;
+    width: auto;
+  }
+  .main-content-img{
+    width: auto;
+    margin-top: 50px;
+    margin: auto;
+  }
+  .cuisine-wrapper{
+    flex-direction: column;
+  }
+  .cuisine-img{
+    width: auto;
+    margin-top: 50px;
+    margin: auto;
+  }
+  .cuisine-text{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 20px 60px;
+    width: auto;
+  }
+  .cuisine-pic img{
+  width: 19%;
+  height: auto;
+  }
+  .pran-wrapper{
+    flex-direction: column-reverse;
+  }
+  .pran-text{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 20px 60px;
+    width: auto;
+  }
+  .pran-img{
+    width: auto;
+    margin-top: 50px;
+    margin: auto;
+  }
+  .shop-text{
+    padding: 0;
+  }
+}
